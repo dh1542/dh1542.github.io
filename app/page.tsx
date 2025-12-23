@@ -1,7 +1,7 @@
-import {Button} from "@heroui/button";
+import Landing from "@/app/landing";
 
 export default function Home() {
   return (
-   <Button>Click me</Button>
+    <Landing></Landing>
   );
 }
