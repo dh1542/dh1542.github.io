@@ -12,7 +12,7 @@ export default function TypeWriter({staticText, completions}: TypeWriterProps) {
     return (
         <h1 className="text-4xl md:text-2xl font-bold tracking-tight">
             {staticText}{" "}
-            <span className="text-primary">
+            <span className="text-secondary">
         <Typewriter
             words={completions}
             loop={true}

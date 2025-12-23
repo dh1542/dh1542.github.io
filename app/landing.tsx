@@ -1,39 +1,38 @@
 "use client";
 
 import NavBar from "@/components/Navbar";
-import {Container} from "postcss";
-import {useState} from "react";
 import TypeWriter from "@/components/TypeWriter";
 import ProfilePicture from "@/components/ProfilePicture";
+import {Button} from "@heroui/button";
+import {Image} from "@heroui/react";
 
 export default function Landing(){
 
-    const completions = ["a kicker god", "a G von hinten"]
+    const completions = ["a kicker god.", "a G von hinten."]
 
 
     return (
         <>
-            <NavBar></NavBar>
-            <div className="h-lvh w-lvh flex items-center justify-center w-full lg:w-lvh">
-                <div className="grid grid-cols-2 gap-1">
+            <NavBar/>
+            <div className="h-lvh w-full flex items-start justify-center">
+                <div className="grid grid-flow-col grid-rows-1 gap-10 p-30">
                     <ProfilePicture imageLink={"./baltimore_oriole.jpg"}/>
                     <div className="flex flex-col gap-4">
                         <TypeWriter staticText={"Hi, I am "} completions={completions}/>
                         <div className="flex flex-col gap-2 w-150 h-150">
                             <h2 className="text-10xl md:text-4xl font-bold tracking-tight"> Dominik Hoffmann </h2>
-                            <div className="text-lg md:text-xl">
+                            <div className=" flextext-lg md:text-xl text-gray-500">
                                 <p>
-                                    Always learning and interested to build something new!
+                                    I’m a full-stack developer focused on React and Spring Boot, building clean and scalable web applications. Curious by nature, I’m always learning and expanding my skill set.
                                 </p>
 
+                            </div>
+                            <div className="flex flex-row gap-4">
+                                <Button color="secondary" radius="sm">Contact</Button>
 
                             </div>
                         </div>
                     </div>
-
-
-
-
                 </div>
             </div>
 
