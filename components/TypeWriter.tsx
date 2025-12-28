@@ -12,7 +12,7 @@ export default function TypeWriter({
     completions,
 }: TypeWriterProps) {
     return (
-        <h1 className="text-4xl md:text-2xl font-bold tracking-tight">
+        <h1 className="text-white text-4xl md:text-2xl font-bold tracking-tight">
             {staticText}{' '}
             <span className="text-purple-500">
                 <Typewriter

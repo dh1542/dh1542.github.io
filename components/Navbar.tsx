@@ -12,7 +12,7 @@ import { Button } from '@heroui/button'
 
 export default function NavBar() {
     return (
-        <Navbar className="bg-secondary text-primary" height={'10vh'}>
+        <Navbar className="bg-primary text-white" height={'10vh'}>
             <NavbarBrand>
                 <p className="font-bold text-inherit">Dominik Hoffmann</p>
             </NavbarBrand>

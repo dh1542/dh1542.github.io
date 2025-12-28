@@ -7,10 +7,10 @@ import {
 export default function About() {
     return (
         <div
-            className="flex flex-col justify-center items-center bg-secondary w-full h-full"
+            className="flex flex-col justify-center items-center bg-secondary"
             id="about"
         >
-            <Terminal className="w-2/4">
+            <Terminal className="w-200">
                 <TypingAnimation>
                     &gt; pnpm dlx shadcn@latest init
                 </TypingAnimation>
