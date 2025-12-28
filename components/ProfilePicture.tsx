@@ -1,14 +1,13 @@
-"use client";
-import {Image} from "@heroui/react";
+'use client'
+import { Image } from '@heroui/react'
 
 interface ProfilePictureProps {
-    imageLink: string;
+    imageLink: string
 }
 
-
-export default function ProfilePicture({imageLink}: ProfilePictureProps) {
-    return(
-        <div className="w-64 h-64 rounded-full overflow-hidden border-3 border-white-1000">
+export default function ProfilePicture({ imageLink }: ProfilePictureProps) {
+    return (
+        <div className="w-64 h-64 rounded-full overflow-hidden border-5 border-amber-50">
             <Image
                 src={imageLink}
                 alt="profile-pic"
@@ -17,5 +16,5 @@ export default function ProfilePicture({imageLink}: ProfilePictureProps) {
                 className="object-cover"
             />
         </div>
-    );
+    )
 }
