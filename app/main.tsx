@@ -1,6 +1,6 @@
 import NavBar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
-import About from '@/components/About'
+import AboutSection from '@/components/AboutSection'
 import { ScrollIndicator } from '@/components/ScrollIndicator'
 import { WorkSection } from '@/components/WorkSection'
 
@@ -18,7 +18,7 @@ export default function Main() {
                 <HeroSection />
             </div>
             <div className="mt-48 flex flex-col gap-2 w-full min-h-dvh">
-                <About />
+                <AboutSection />
             </div>
             <div className="mt-48 flex flex-col gap-2 w-full min-h-dvh">
                 <WorkSection/>
