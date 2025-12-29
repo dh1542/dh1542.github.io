@@ -4,7 +4,7 @@ import About from '@/components/About'
 
 export default function Main() {
     return (
-        <div className="w-full h-full flex flex-col justify-center items-center bg-primary">
+        <div className="w-full h-full flex flex-col justify-center items-center bg-background dark">
             <div className="w-full">
                 <NavBar />
             </div>

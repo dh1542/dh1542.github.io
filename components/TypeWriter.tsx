@@ -14,7 +14,7 @@ export default function TypeWriter({
     return (
         <h1 className="text-white text-4xl md:text-2xl font-bold tracking-tight">
             {staticText}{' '}
-            <span className="text-purple-500">
+            <span className="text-primary">
                 <Typewriter
                     words={completions}
                     loop={true}

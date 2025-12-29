@@ -5,7 +5,6 @@ import ProfilePicture from '@/components/ProfilePicture'
 import { Button } from '@/components/ui/button'
 import { Linkedin } from '@/components/ui/svgs/linkedin'
 import IconButton from '@/components/IconButton'
-import { Github } from 'lucide-react'
 import { GithubDark } from '@/components/ui/svgs/githubDark'
 
 export default function HeroSection({}) {
@@ -39,20 +38,31 @@ export default function HeroSection({}) {
                             </p>
                         </div>
                         <div className="pt-3 flex flex-col gap-1">
-                            <Button
-                                onClick={() => console.log('HELLO')}
-                                className="w-1/4"
-                                variant="secondary"
-                            >
-                                Contact me
-                            </Button>
-                            <div className="flex flex-row gap-1">
-                                <IconButton href="https://de.linkedin.com">
-                                    <Linkedin />
-                                </IconButton>
-                                <IconButton href="https://github.com/dh1542">
-                                    <GithubDark />
-                                </IconButton>
+
+                            <div className="flex flex-row gap-4">
+                                <Button
+                                    onClick={() => console.log('HELLO')}
+                                    className="w-1/4"
+                                >
+                                    Contact me
+                                </Button>
+                                <div className="relative after:absolute after:bottom-0 after:left-0
+                        after:h-px after:w-0 after:bg-primary
+                        hover:after:w-full after:transition-all">
+                                    <IconButton href="https://de.linkedin.com">
+                                        <Linkedin />
+                                    </IconButton>
+
+                                </div>
+
+                                <div className="relative after:absolute after:bottom-0 after:left-0
+                        after:h-px after:w-0 after:bg-primary
+                        hover:after:w-full after:transition-all">
+                                    <IconButton href="https://github.com/dh1542">
+                                        <GithubDark />
+                                    </IconButton>
+                                </div>
+
                             </div>
                         </div>
                     </div>

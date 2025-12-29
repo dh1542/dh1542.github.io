@@ -7,7 +7,7 @@ interface ProfilePictureProps {
 
 export default function ProfilePicture({ imageLink }: ProfilePictureProps) {
     return (
-        <div className="w-64 h-64 rounded-full overflow-hidden border-5 border-amber-50">
+        <div className="w-64 h-64 rounded-full overflow-hidden border-5 border-secondary rounded-full">
             <Image
                 src={imageLink}
                 alt="profile-pic"
