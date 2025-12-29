@@ -14,10 +14,10 @@ export default function HeroSection({}) {
         'strategically focused.',
         'a collaborative team player.',
     ]
-
     return (
-        <>
-            <div className="grid grid-flow-col grid-rows-1 gap-10 w-2/4">
+
+            <div className="flex flex-col w-2/4">
+                <div className="grid grid-flow-col grid-rows-1 gap-10 ">
                 <ProfilePicture imageLink={'./baltimore_oriole.jpg'} />
                 <div className="flex flex-col gap-4 text-primary">
                     <TypeWriter
@@ -29,7 +29,7 @@ export default function HeroSection({}) {
                             {' '}
                             Dominik Hoffmann{' '}
                         </h2>
-                        <div className="flextext-lg md:text-xl text-gray-500">
+                        <div className="flex text-lg md:text-xl text-gray-500">
                             <p>
                                 I’m a developer focused on React and Spring
                                 Boot, building clean and scalable web
@@ -62,12 +62,12 @@ export default function HeroSection({}) {
                                         <GithubDark />
                                     </IconButton>
                                 </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </>
+            </div>
+
     )
 }

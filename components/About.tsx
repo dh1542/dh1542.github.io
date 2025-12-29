@@ -1,3 +1,4 @@
+"use client"
 import {
     AnimatedSpan,
     Terminal,
@@ -7,9 +8,10 @@ import {
 export default function About() {
     return (
         <div
-            className="flex flex-col justify-center items-center bg-secondary"
+            className="pt-52 flex flex-col justify-center items-center"
             id="about"
         >
+            <div>
             <Terminal className="w-200">
                 <TypingAnimation>
                     &gt; pnpm dlx shadcn@latest init
@@ -64,6 +66,9 @@ export default function About() {
                     You may now add components.
                 </TypingAnimation>
             </Terminal>
+            </div>
+
         </div>
+
     )
 }

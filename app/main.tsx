@@ -1,22 +1,25 @@
 import NavBar from '@/components/Navbar'
 import HeroSection from '@/components/HeroSection'
 import About from '@/components/About'
+import { ScrollIndicator } from '@/components/ScrollIndicator'
+
 
 export default function Main() {
     return (
-        <div className="w-full h-full flex flex-col justify-center items-center bg-background dark">
+        <div className=" from-background/50 to-primary w-full h-full flex flex-col justify-center items-center bg-background dark bg-gradient-to-b from-30%">
             <div className="w-full">
                 <NavBar />
             </div>
             <div
-                className="mt-48 flex justify-center items-center w-full h-4/5"
+                className="pb-24 flex justify-center items-center w-full min-h-[calc(100dvh-4rem)]"
                 id="hero"
             >
                 <HeroSection />
             </div>
-            <div className="mt-48 flex flex-col gap-2 w-full">
+            <div className="mt-48 flex flex-col gap-2 w-full min-h-dvh">
                 <About />
             </div>
+            <ScrollIndicator/>
         </div>
     )
 }
