@@ -4,7 +4,6 @@ import AboutSection from '@/components/AboutSection'
 import { ScrollIndicator } from '@/components/ScrollIndicator'
 import { WorkSection } from '@/components/WorkSection'
 
-
 export default function Main() {
     return (
         <div className=" from-background/50 to-primary w-full h-full flex flex-col justify-center items-center bg-background dark bg-gradient-to-b from-30%">
@@ -21,9 +20,9 @@ export default function Main() {
                 <AboutSection />
             </div>
             <div className="mt-48 flex flex-col gap-2 w-full min-h-dvh">
-                <WorkSection/>
+                <WorkSection />
             </div>
-            <ScrollIndicator/>
+            <ScrollIndicator />
         </div>
     )
 }

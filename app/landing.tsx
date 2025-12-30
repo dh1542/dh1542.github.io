@@ -1,6 +1,5 @@
 'use client'
 
-import NavBar from '@/components/Navbar'
 import TypeWriter from '@/components/TypeWriter'
 import ProfilePicture from '@/components/ProfilePicture'
 import { Button } from '@heroui/button'

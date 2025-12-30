@@ -15,9 +15,8 @@ export default function HeroSection({}) {
         'a collaborative team player.',
     ]
     return (
-
-            <div className="flex flex-col w-2/4">
-                <div className="grid grid-flow-col grid-rows-1 gap-10 ">
+        <div className="flex flex-col w-2/4">
+            <div className="grid grid-flow-col grid-rows-1 gap-10 ">
                 <ProfilePicture imageLink={'./baltimore_oriole.jpg'} />
                 <div className="flex flex-col gap-4 text-primary">
                     <TypeWriter
@@ -38,7 +37,6 @@ export default function HeroSection({}) {
                             </p>
                         </div>
                         <div className="pt-3 flex flex-col gap-1">
-
                             <div className="flex flex-row gap-4">
                                 <Button
                                     onClick={() => console.log('HELLO')}
@@ -46,18 +44,21 @@ export default function HeroSection({}) {
                                 >
                                     Contact me
                                 </Button>
-                                <div className="relative after:absolute after:bottom-0 after:left-0
+                                <div
+                                    className="relative after:absolute after:bottom-0 after:left-0
                         after:h-px after:w-0 after:bg-primary
-                        hover:after:w-full after:transition-all">
+                        hover:after:w-full after:transition-all"
+                                >
                                     <IconButton href="https://de.linkedin.com">
                                         <Linkedin />
                                     </IconButton>
-
                                 </div>
 
-                                <div className="relative after:absolute after:bottom-0 after:left-0
+                                <div
+                                    className="relative after:absolute after:bottom-0 after:left-0
                         after:h-px after:w-0 after:bg-primary
-                        hover:after:w-full after:transition-all">
+                        hover:after:w-full after:transition-all"
+                                >
                                     <IconButton href="https://github.com/dh1542">
                                         <GithubDark />
                                     </IconButton>
@@ -67,7 +68,6 @@ export default function HeroSection({}) {
                     </div>
                 </div>
             </div>
-            </div>
-
+        </div>
     )
 }

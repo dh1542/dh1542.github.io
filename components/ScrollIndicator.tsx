@@ -1,23 +1,21 @@
-"use client"
+'use client'
 
-import { ChevronsDown } from "lucide-react";
+import { ChevronsDown } from 'lucide-react'
 import { useSectionVisibility } from '@/hooks/useCurrentSection'
 
-const SECTIONS = ["hero", "about", "work", "contact"];
+const SECTIONS = ['hero', 'about', 'work', 'contact']
 
 export function ScrollIndicator() {
-    const { current, showIndicator } = useSectionVisibility(SECTIONS);
+    const { current, showIndicator } = useSectionVisibility(SECTIONS)
 
-    const index = SECTIONS.indexOf(current);
-    const next = SECTIONS[index + 1];
+    const index = SECTIONS.indexOf(current)
+    const next = SECTIONS[index + 1]
 
-    if (!next) return null;
+    if (!next) return null
 
     const scrollToNext = () => {
-        document
-            .getElementById(next)
-            ?.scrollIntoView({ behavior: "smooth" });
-    };
+        document.getElementById(next)?.scrollIntoView({ behavior: 'smooth' })
+    }
 
     return (
         <button
@@ -33,13 +31,13 @@ export function ScrollIndicator() {
         hover:bg-secondary
         [&_svg]:w-12 [&_svg]:h-12
         ${
-                showIndicator
-                    ? "opacity-100 translate-y-0 pointer-events-auto"
-                    : "opacity-0 translate-y-6 pointer-events-none"
-            }
+            showIndicator
+                ? 'opacity-100 translate-y-0 pointer-events-auto'
+                : 'opacity-0 translate-y-6 pointer-events-none'
+        }
       `}
         >
             <ChevronsDown />
         </button>
-    );
+    )
 }
