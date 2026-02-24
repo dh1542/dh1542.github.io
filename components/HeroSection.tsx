@@ -15,7 +15,7 @@ export default function HeroSection({}) {
         'a collaborative team player.',
     ]
     return (
-        <div className="flex flex-col w-2/4">
+        <div id="home" className="flex flex-col w-2/4">
             <div className="grid grid-flow-col grid-rows-1 gap-10 ">
                 <ProfilePicture imageLink={'./baltimore_oriole.jpg'} />
                 <div className="flex flex-col gap-4 text-primary">

@@ -3,7 +3,7 @@
 import { ChevronsDown } from 'lucide-react'
 import { useSectionVisibility } from '@/hooks/useCurrentSection'
 
-const SECTIONS = ['hero', 'about', 'work', 'contact']
+const SECTIONS = ['hero', 'about', 'education', 'work', 'contact']
 
 export function ScrollIndicator() {
     const { current, showIndicator } = useSectionVisibility(SECTIONS)
@@ -26,10 +26,11 @@ export function ScrollIndicator() {
         animate-bounce
         rounded-full
         text-white
-        backdrop-blur-md
+        bg-transparent
         transition-all duration-300 ease-out
         hover:bg-secondary
         [&_svg]:w-12 [&_svg]:h-12
+        z-11
         ${
             showIndicator
                 ? 'opacity-100 translate-y-0 pointer-events-auto'

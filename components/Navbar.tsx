@@ -27,7 +27,7 @@ export default function NavBar() {
                         after:h-px after:w-0 after:bg-primary
                         hover:after:w-full after:transition-all"
                 >
-                    <Link aria-current="page" href="">
+                    <Link aria-current="page" href="#home">
                         Home
                     </Link>
                 </NavbarItem>
@@ -45,8 +45,26 @@ export default function NavBar() {
                         after:h-px after:w-0 after:bg-primary
                         hover:after:w-full after:transition-all"
                 >
-                    <Link aria-current="page" href="#">
+                    <Link aria-current="page" href="#education">
+                        Education
+                    </Link>
+                </NavbarItem>
+                <NavbarItem
+                    className="relative after:absolute after:bottom-0 after:left-0
+                        after:h-px after:w-0 after:bg-primary
+                        hover:after:w-full after:transition-all"
+                >
+                    <Link aria-current="page" href="#work">
                         Work
+                    </Link>
+                </NavbarItem>
+                <NavbarItem
+                    className="relative after:absolute after:bottom-0 after:left-0
+                        after:h-px after:w-0 after:bg-primary
+                        hover:after:w-full after:transition-all"
+                >
+                    <Link aria-current="page" href="#projects">
+                        Projects
                     </Link>
                 </NavbarItem>
                 <NavbarItem
