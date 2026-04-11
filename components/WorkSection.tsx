@@ -1,5 +1,5 @@
 import { TimeLine } from '@/components/TimeLine/TimeLine'
-import { TimeLineCard } from '@/components/TimeLine/TimeLineCard'
+import { DescriptionCard } from '@/components/TimeLine/DescriptionCard'
 
 export function WorkSection() {
     return (
@@ -14,7 +14,7 @@ export function WorkSection() {
             </div>
             <div id="work">
                 <TimeLine>
-                    <TimeLineCard
+                    <DescriptionCard
                         title="Working Student - Software Development"
                         institution="ISO Software Systeme GmbH"
                         description={
@@ -44,7 +44,7 @@ export function WorkSection() {
                         }
                         duration="March 2022 - June 2024"
                     />
-                    <TimeLineCard
+                    <DescriptionCard
                         title="Working Student - Software Development"
                         institution="ISO Public Services GmbH"
                         description={

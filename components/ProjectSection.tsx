@@ -1,16 +1,17 @@
 'use client'
-import GithubRepoList from '@/components/GithubRepoList'
 import { TimeLine } from '@/components/TimeLine/TimeLine'
-import { TimeLineCard } from '@/components/TimeLine/TimeLineCard'
+import { DescriptionCard } from '@/components/TimeLine/DescriptionCard'
 import { useRepo } from '@/hooks/useRepo'
 
 export default function ProjectSection() {
 
     const repoList = [{ user: 'dh1542', repoName: 'vessel-tracker' }, {user: 'rtdip', repoName: 'core'}]
     const repos = useRepo(repoList)
+
+
     return (
         <div
-            id="education"
+            id="projects"
             className="flex flex-col w-full justify-center items-center gap-0 "
         >
             <div
@@ -19,16 +20,17 @@ export default function ProjectSection() {
                     text-white
                   "
             >
-                Educational Background
+                Contributed and Self Made Projects
             </div>
             <div>
                 <TimeLine>
                     {repos?.map((r) => (
-                        <TimeLineCard
+                        <DescriptionCard
                             key={r.html_url}
-                            title={r.html_url}
+                            title={r.name}
                             institution={r.html_url}
                             description={r.description}
+                            duration={r.languages.join(', ')}
                         />
                     ))}
                 </TimeLine>

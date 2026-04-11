@@ -6,8 +6,8 @@ import { getRepo } from '@/lib/api/github/repos'
 
 export function useRepo(
     repositories: GetReposRequest[]
-): GetReposResponse[] | null {
-    const [repos, setRepos] = useState<GetReposResponse[] | null>(null)
+): Repo[] | null {
+    const [repos, setRepos] = useState<Repo[] | null>(null)
 
     useEffect(() => {
         async function loadRepos() {
@@ -17,7 +17,7 @@ export function useRepo(
                 )
             )
 
-            setRepos(repResults.filter((repo): repo is GetReposResponse => repo !== null))
+            setRepos(repResults.filter((repo): repo is Repo => repo !== null))
         }
 
         loadRepos()

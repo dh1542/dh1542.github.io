@@ -1,10 +1,4 @@
-import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-} from '@/components/ui/card'
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
 import { ReactNode } from 'react'
 
 type TimeLineCardProps = {
@@ -14,13 +8,13 @@ type TimeLineCardProps = {
     duration?: string
 }
 
-export function TimeLineCard({
-    title,
-    institution,
-    description,
-    duration,
+export function DescriptionCard({
+                                 title,
+                                 institution,
+                                 description,
+                                 duration,
 
-}: TimeLineCardProps) {
+                             }: TimeLineCardProps) {
     return (
         <Card
             className=" w-90 rounded-xl
@@ -37,7 +31,13 @@ export function TimeLineCard({
                         <CardTitle className="text-base">{title}</CardTitle>
                         <CardDescription className="pt-0">
                             <div className="text-secondary font-bold text-xs">
-                                {institution}
+                                {institution.startsWith('http') ? (
+                                    <a href={institution}>
+                                        {institution}
+                                    </a>
+                                ) : (
+                                    <span>{institution}</span>
+                                )}
                             </div>
                         </CardDescription>
                         <div className="text-xs">{duration}</div>
