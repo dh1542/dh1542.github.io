@@ -11,7 +11,7 @@ type TimeLineCardProps = {
     title: string
     institution: string
     description: ReactNode | string
-    duration: string
+    duration?: string
 }
 
 export function TimeLineCard({
@@ -19,6 +19,7 @@ export function TimeLineCard({
     institution,
     description,
     duration,
+
 }: TimeLineCardProps) {
     return (
         <Card
