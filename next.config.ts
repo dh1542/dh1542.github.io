@@ -1,7 +1,15 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+const isProd = process.env.NODE_ENV === 'production'
+const repo = 'dh1542.github.io'
+
+const nextConfig = {
+    output: 'export',
+    trailingSlash: true,
+    images: {
+        unoptimized: true,
+    },
+    basePath: isProd ? `/${repo}` : '',
+}
 
 export default nextConfig;
