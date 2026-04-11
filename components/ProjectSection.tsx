@@ -30,7 +30,6 @@ export default function ProjectSection() {
                             title={r.name}
                             institution={r.html_url}
                             description={r.description}
-                            duration={r.languages.join(', ')}
                         />
                     ))}
                 </TimeLine>

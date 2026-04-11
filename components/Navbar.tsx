@@ -16,7 +16,7 @@ export default function NavBar() {
         >
             <NavbarContent justify="start">
                 <NavbarBrand>
-                    <p className="font-bold text-inherit text-xl antialiased font-serif">
+                    <p className="font-bold text-inherit text-xl antialiased font-serif text-primary">
                         Dominik Hoffmann
                     </p>
                 </NavbarBrand>

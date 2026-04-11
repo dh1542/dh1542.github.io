@@ -30,7 +30,7 @@ export function DescriptionCard({
                     <CardHeader className="flex flex-col gap-0 p-1">
                         <CardTitle className="text-base">{title}</CardTitle>
                         <CardDescription className="pt-0">
-                            <div className="text-secondary font-bold text-xs">
+                            <div className="text-primary font-bold text-xs">
                                 {institution.startsWith('http') ? (
                                     <a href={institution}>
                                         {institution}

@@ -13,7 +13,7 @@ export function TimeLine({ children }: TimeLineProps) {
                 className="
           absolute top-0 bottom-0 left-4 w-[3px]
           rounded-full bg-gradient-to-b
-          from-transparent via-secondary/70 to-transparent
+          from-transparent via-primary/70 to-transparent
           z-0
           md:left-1/2 md:-translate-x-1/2
         "
@@ -37,8 +37,8 @@ export function TimeLine({ children }: TimeLineProps) {
                   hidden md:block absolute top-1/2 h-px -translate-y-1/2 z-0
                   ${
                                     isLeft
-                                        ? 'left-[calc(50%-max(40px,2.5rem))] w-[calc(50%-40px)] -translate-x-full bg-gradient-to-l from-secondary/60 to-secondary/10'
-                                        : 'left-1/2 ml-[40px] w-[calc(50%-40px)] bg-gradient-to-r from-secondary/60 to-secondary/10'
+                                        ? 'left-[calc(50%-max(40px,2.5rem))] w-[calc(50%-40px)] -translate-x-full bg-gradient-to-l from-primary/60 to-primary/10'
+                                        : 'left-1/2 ml-[40px] w-[calc(50%-40px)] bg-gradient-to-r from-primary/60 to-primary/10'
                                 }
                 `}
                             />
@@ -60,7 +60,7 @@ export function TimeLine({ children }: TimeLineProps) {
                             <span
                                 className="
                   absolute top-1/2 left-4 h-3 w-3 -translate-x-1/2 -translate-y-1/2
-                  rounded-full bg-secondary z-10
+                  rounded-full bg-primary z-10
                   md:left-1/2
                 "
                             />
