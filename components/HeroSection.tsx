@@ -3,9 +3,8 @@
 import TypeWriter from '@/components/TypeWriter'
 import ProfilePicture from '@/components/ProfilePicture'
 import { Button } from '@/components/ui/button'
-import { Linkedin } from '@/components/ui/svgs/linkedin'
+import { Linkedin, GithubDark } from '@/components/ui/icons/logos'
 import IconButton from '@/components/IconButton'
-import { GithubDark } from '@/components/ui/svgs/githubDark'
 
 export default function HeroSection() {
     const completions = [

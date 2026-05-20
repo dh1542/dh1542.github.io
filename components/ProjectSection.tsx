@@ -1,13 +1,13 @@
 'use client'
 import { TimeLine } from '@/components/TimeLine/TimeLine'
-import { DescriptionCard } from '@/components/TimeLine/DescriptionCard'
 import { useRepo } from '@/hooks/useRepo'
+import { ProjectCard } from '@/components/TimeLine/ProjectCard'
+
+const repoList = [{ user: 'dh1542', repoName: 'vessel-tracker' }, {user: 'rtdip', repoName: 'core'}, {user: 'dh1542', repoName: 'dh1542.github.io'}]
 
 export default function ProjectSection() {
 
-    const repoList = [{ user: 'dh1542', repoName: 'vessel-tracker' }, {user: 'rtdip', repoName: 'core'}]
     const repos = useRepo(repoList)
-
 
     return (
         <div
@@ -25,14 +25,18 @@ export default function ProjectSection() {
             <div>
                 <TimeLine>
                     {repos?.map((r) => (
-                        <DescriptionCard
+                        <ProjectCard
                             key={r.html_url}
                             title={r.name}
-                            institution={r.html_url}
+                            url={r.html_url}
                             description={r.description}
+                            languages={r.languages}
                         />
                     ))}
                 </TimeLine>
+                <br/>
+
+
             </div>
         </div>
     );

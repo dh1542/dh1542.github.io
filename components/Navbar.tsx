@@ -1,7 +1,7 @@
 import { Navbar, NavbarBrand, NavbarContent, NavbarItem } from '@heroui/navbar'
 import Link from 'next/link'
 import IconButton from '@/components/IconButton'
-import { GithubDark } from '@/components/ui/svgs/githubDark'
+import { GithubDark } from '@/components/ui/icons/logos'
 
 export default function NavBar() {
     return (
