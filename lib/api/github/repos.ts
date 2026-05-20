@@ -31,10 +31,11 @@ export async function getRepo({
         }
 
         const languageData = await repo_languages.json()
+        const languages = Object.keys(languageData)
 
         return {
             name: repoName,
-            languages: languageData ?? [''],
+            languages: languages,
             html_url: repoData.html_url ?? '',
             description: repoData.description ?? '',
             stargazers_count: String(repoData.stargazers_count ?? 0),
