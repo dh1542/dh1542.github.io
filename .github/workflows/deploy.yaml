@@ -33,6 +33,30 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Debug npm / next
+        run: |
+          echo "PWD:"
+          pwd
+
+          echo "Files:"
+          ls -la
+
+          echo "package.json scripts/deps:"
+          node -e "const p=require('./package.json'); console.log({scripts:p.scripts, dependencies:p.dependencies, devDependencies:p.devDependencies})"
+
+          echo "npm / node:"
+          node -v
+          npm -v
+
+          echo "next dependency:"
+          npm ls next || true
+
+          echo "next binary:"
+          ls -la node_modules/.bin/next || true
+
+          echo "PATH:"
+          echo "$PATH"
+
       - name: Build static export
         run: npm run build
 
