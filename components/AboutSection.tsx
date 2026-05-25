@@ -1,9 +1,9 @@
-'use client'
+'use client';
 import {
     AnimatedSpan,
     Terminal,
     TypingAnimation,
-} from '@/components/magicui/terminal'
+} from '@/components/magicui/terminal';
 
 export default function AboutSection() {
     return (
@@ -56,7 +56,7 @@ export default function AboutSection() {
                     </TypingAnimation>
                     <AnimatedSpan delay={3000} className="text-white">
                         <span>
-                            Welcome to my portfolio website
+                            Welcome to my portfolio website! I am Dominik.
                             <br />{' '}
                         </span>
                     </AnimatedSpan>
@@ -68,9 +68,14 @@ export default function AboutSection() {
                     </TypingAnimation>
                     <AnimatedSpan delay={6000} className="text-white">
                         <ol>
-                            <li>Java</li>
+                            <li>Java (Spring Boot, JakartaEE)</li>
                             <li>React</li>
-                            <li>....</li>
+                            <li>Vue.js</li>
+                            <li>Databases</li>
+                            <li>Docker</li>
+                            <li>Kubernetes</li>
+                            <li>Go</li>
+                            <li>.....</li>
                         </ol>
                     </AnimatedSpan>
                     <AnimatedSpan delay={6000} className="text-red-500">
@@ -81,13 +86,31 @@ export default function AboutSection() {
                     </TypingAnimation>
                     <AnimatedSpan delay={9000} className="text-white">
                         <ol>
-                            <li>ISO</li>
-                            <li>usw. und so fort</li>
-                            <li>....</li>
+                            <li>
+                                Gained four years of hands-on experience as a
+                                working student
+                            </li>
+                            <li>
+                                at ISO-Gruppe, contributing to real-world
+                                software projects
+                            </li>
+                            <li>alongside my studies.</li>
+                            <li>
+                                <br />
+                            </li>
+                            <li>
+                                Transitioned into a full-time role as a
+                                Development Consultant
+                            </li>
+                            <li>
+                                in May 2026, working on software solutions for
+                                Germany’s public
+                            </li>
+                            <li>sector.</li>
                         </ol>
                     </AnimatedSpan>
                 </Terminal>
             </div>
         </div>
-    )
+    );
 }

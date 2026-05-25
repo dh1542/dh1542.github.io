@@ -1,10 +1,10 @@
-'use client'
+'use client';
 
-import TypeWriter from '@/components/TypeWriter'
-import ProfilePicture from '@/components/ProfilePicture'
-import { Button } from '@/components/ui/button'
-import { Linkedin, GithubDark } from '@/components/ui/icons/logos'
-import IconButton from '@/components/IconButton'
+import TypeWriter from '@/components/TypeWriter';
+import ProfilePicture from '@/components/ProfilePicture';
+import { Button } from '@/components/ui/button';
+import { Linkedin, GithubDark } from '@/components/ui/icons/logos';
+import IconButton from '@/components/IconButton';
 
 export default function HeroSection() {
     const completions = [
@@ -12,7 +12,7 @@ export default function HeroSection() {
         'architecturally minded.',
         'strategically focused.',
         'a collaborative team player.',
-    ]
+    ];
 
     return (
         <section
@@ -38,9 +38,10 @@ export default function HeroSection() {
 
                             <div className="text-base leading-relaxed text-gray-500 sm:text-lg lg:text-xl">
                                 <p>
-                                    I’m a developer focused on React and Spring Boot, building
-                                    clean and scalable web applications. Curious by nature, I’m
-                                    always learning and expanding my skill set.
+                                    I’m a developer focused on React and Spring
+                                    Boot, building clean and scalable web
+                                    applications. Curious by nature, I’m always
+                                    learning and expanding my skill set.
                                 </p>
                             </div>
 
@@ -58,7 +59,7 @@ export default function HeroSection() {
                     after:h-px after:w-0 after:bg-primary
                     after:transition-all hover:after:w-full"
                                     >
-                                        <IconButton href="https://de.linkedin.com">
+                                        <IconButton href="https://de.linkedin.com/in/dominik-hoffmann-735148409">
                                             <Linkedin />
                                         </IconButton>
                                     </div>
@@ -79,5 +80,5 @@ export default function HeroSection() {
                 </div>
             </div>
         </section>
-    )
+    );
 }

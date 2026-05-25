@@ -1,5 +1,5 @@
-import { TimeLine } from '@/components/TimeLine/TimeLine'
-import { DescriptionCard } from '@/components/TimeLine/DescriptionCard'
+import { TimeLine } from '@/components/TimeLine/TimeLine';
+import { DescriptionCard } from '@/components/TimeLine/DescriptionCard';
 
 export function EducationSection() {
     return (
@@ -32,11 +32,11 @@ export function EducationSection() {
                     <DescriptionCard
                         title="B.Sc. Computer Science"
                         institution="Friedrich Alexander Universität Erlangen"
-                        description="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam"
+                        description="Completed coursework in algorithms and data structures, software engineering, databases, operating systems, computer networks, and theoretical computer science. Gained practical experience through programming assignments, team projects, and applied software development."
                         duration="September 2021 - April 2026"
                     />
                 </TimeLine>
             </div>
         </div>
-    )
+    );
 }

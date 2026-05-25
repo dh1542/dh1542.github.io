@@ -1,5 +1,5 @@
-import { TimeLine } from '@/components/TimeLine/TimeLine'
-import { DescriptionCard } from '@/components/TimeLine/DescriptionCard'
+import { TimeLine } from '@/components/TimeLine/TimeLine';
+import { DescriptionCard } from '@/components/TimeLine/DescriptionCard';
 
 export function WorkSection() {
     return (
@@ -75,10 +75,16 @@ export function WorkSection() {
                                 </li>
                             </ul>
                         }
-                        duration="July 2024 - "
+                        duration="July 2024 - May 2026"
+                    />
+                    <DescriptionCard
+                        title="IT Consultant - Software Development"
+                        institution="ISO Public Services GmbH"
+                        description={<ul></ul>}
+                        duration="May 2026 - "
                     />
                 </TimeLine>
             </div>
         </div>
-    )
+    );
 }
