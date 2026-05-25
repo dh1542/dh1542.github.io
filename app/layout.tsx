@@ -1,39 +1,45 @@
 // For adding custom fonts with other frameworks, see:
 // https://tailwindcss.com/docs/font-family
-import type { Metadata } from "next";
-import { Inter, Source_Serif_4, JetBrains_Mono } from "next/font/google";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Inter, Source_Serif_4, JetBrains_Mono } from 'next/font/google';
+import './globals.css';
 
 const fontSans = Inter({
-    subsets: ["latin"],
-    variable: "--font-sans",
+    subsets: ['latin'],
+    variable: '--font-sans',
 });
 
 const fontSerif = Source_Serif_4({
-    subsets: ["latin"],
-    variable: "--font-serif",
+    subsets: ['latin'],
+    variable: '--font-serif',
 });
 
 const fontMono = JetBrains_Mono({
-    subsets: ["latin"],
-    variable: "--font-mono",
+    subsets: ['latin'],
+    variable: '--font-mono',
 });
 
 export const metadata: Metadata = {
-    title: "Dominik Hoffmann",
-    description: "dh1542.github.io",
+    title: 'Dominik Hoffmann',
+    description: 'dh1542.github.io',
 };
 
 export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+    children,
+}: Readonly<{
     children: React.ReactNode;
 }>) {
     return (
         <html lang="en">
-        <body className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} antialiased`}>
-        {children}
-        </body>
+            <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+            />
+            <body
+                className={`${fontSans.variable} ${fontSerif.variable} ${fontMono.variable} antialiased`}
+            >
+                {children}
+            </body>
         </html>
     );
 }
