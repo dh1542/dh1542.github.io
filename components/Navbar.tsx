@@ -15,11 +15,12 @@ import IconButton from '@/components/IconButton';
 import { GithubDark } from '@/components/ui/icons/logos';
 
 const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Education', href: '#education' },
-    { label: 'Work', href: '#work' },
-    { label: 'Projects', href: '#projects' },
+    { label: 'Home', href: '/#home' },
+    { label: 'About', href: '/#about' },
+    { label: 'Education', href: '/#education' },
+    { label: 'Work', href: '/#work' },
+    { label: 'Projects', href: '/#projects' },
+    { label: 'Photography', href: '/photography' },
 ];
 
 export default function NavBar() {
